@@ -12,7 +12,7 @@
       <div class="header-hero-inner-wrap">
         <div class="inner">
           <div class="header-hero-nav">
-            <a class="logo-wrap local" href="/"><img class="logo" alt="duo security logo" src="/assets/img/duoLogo-web.png"></a>
+            <a class="logo-wrap local" href="/"><img class="logo" alt="duo security logo" src="assets/duoLogo-web.png"></a>
 					</div>
       		<div class="main-nav-lg-wrap">
 					  <nav class="main-nav-lg">
@@ -57,5 +57,10 @@
 		<main class="page">
 
 		</main>
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+      var client = algoliasearch('Z4OW806SU2', '8077ed1704cb5ae155e74e4e0e29b24e');
+      var index = client.initIndex('demo_duocom');
+    </script>
 	</body>
 </html>
