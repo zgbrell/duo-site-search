@@ -252,9 +252,26 @@ hr.main-sub-nav-sep {
   color: #9B9B9B;
 }
 
+#search-wrap .aa-dropdown-menu {
+  padding: 1.0rem;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #ccc;
+}
 
 .icon-svg {
   height: 60px;
   width: 60px;
   fill: #6bbf4e;
+}
+
+.search-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-results li {
+  margin-bottom: 1.0rem;
+  color: #6bbf4e;
 }
