@@ -35,17 +35,15 @@
       <section class="leadin-full-width">
         <div class="inner">
           <div class="leadin__content">
-            <div id="search-wrap" class="visible">
-              <form id="search-form" action="/search" method="GET">
-                <input type="text" name="q" placeholder="Search" id="site-search">
-                <button type="submit"><i class="icon-magnify-thick"></i></button>
-              </form>
+            <div id="search-wrap">
+              <label for="site-search">Search:</label>
+              <input type="text" id="site-search">
             </div>
           </div>
         </div>
       </section>
-      <div id="results" class="search-results">
-      </div>
+      <div id="results" class="search-results"></div>
+      <div id="container" class="search-container"></div>
 		</main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
@@ -55,6 +53,7 @@
       var client = algoliasearch('Z4OW806SU2', '8077ed1704cb5ae155e74e4e0e29b24e');
       var index = client.initIndex('demo_duocom');
       var helper = algoliasearchHelper(client, 'demo_duocom');
+
       $('#site-search').autocomplete({ hint: false }, [
         {
           source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 5 }),
@@ -69,11 +68,22 @@
         console.log(suggestion, dataset);
       });
 
-      helper.on('result', function(result) {
-        result.hits.forEach((hit) =>
-        	 $('#results').append('<p>' + hit.name + '</p>');
-        );
+      $('#site-search').on('keyup', function() {
+        helper.setQuery($(this).val())
+              .search();
       });
+
+      helper.on('result', function(content) {
+        renderHits(content);
+      });
+
+      function renderHits(content) {
+        $('#results').html(function() {
+          return $.map(content.hits, function(hit) {
+            return '<li>' + hit._highlightResult.name.value + '</li>';
+          });
+        });
+      }
     </script>
 	</body>
 </html>
