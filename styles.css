@@ -19,6 +19,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+header,
+main {
+  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 68rem;
+}
+
 h1,
 h2,
 h3,
@@ -79,6 +86,15 @@ p a:focus {
 
 strong {
   color: #363f44;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  display: block;
+  width: 110px;
 }
 
 .main-nav-lg-wrap {
