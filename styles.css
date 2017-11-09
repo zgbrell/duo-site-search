@@ -239,7 +239,7 @@ hr.main-sub-nav-sep {
 }
 
 #search-wrap label {
-  color: #9B9B9B;
+  color: #4A4A4A;
 }
 
 #search-wrap label,
@@ -248,8 +248,8 @@ hr.main-sub-nav-sep {
   font-size: 4.5rem;
 }
 
-.#search-wrap input[type=text] {
-  color: #4A4A4A;
+#search-wrap input[type=text] {
+  color: #9B9B9B;
 }
 
 
