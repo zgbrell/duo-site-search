@@ -1,0 +1,21 @@
+/*--- base styles ---*/
+html {
+  box-sizing: border-box;
+  background-color: #dae4e6;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 90.0rem;
+  -webkit-box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.08);
+  box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.08);
+  color: #54626a;
+  background: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/*--- end base styles ---*/
