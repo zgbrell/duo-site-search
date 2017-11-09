@@ -56,7 +56,7 @@
     <script>
       var client = algoliasearch('Z4OW806SU2', '8077ed1704cb5ae155e74e4e0e29b24e');
       var index = client.initIndex('demo_duocom');
-      //var helper = algoliasearchHelper(client, 'demo_duocom');
+      var helper = algoliasearchHelper(client, 'demo_duocom');
 
       $('#site-search').autocomplete({ hint: false }, [
         {
