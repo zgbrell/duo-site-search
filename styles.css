@@ -14,8 +14,119 @@ body {
   -webkit-box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.08);
   -moz-box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.08);
   box-shadow: 0px 2px 50px 0px rgba(0,0,0,0.08);
-  color: #54626a;
+  color: #54626a; /* $duo-slate */
   background: #ffffff;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #363f44; /* $duo-blue */
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.875rem;
+  line-height: 3.0rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.375rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+  line-height: 1.75rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+
+p {
+  margin-top: 1.5rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+
+p a {
+  margin-bottom: 0;
+  color: #54626a;
+}
+
+p a:hover,
+p a:focus {
+  color: #54626a;
+}
+
+strong {
+  color: #363f44;
+}
+
+.main-nav-lg-wrap {
+  margin-right: 0;
+}
+
+.main-nav-lg {
+
+}
+
+.main-nav-lg-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav-lg-li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
+  line-height: 1.25rem;
+}
+
+.main-nav-lg-li:last-child {
+  margin-right: 0;
+}
+
+.main-nav-lg-link {
+  display: inline-block;
+  padding: 0.625rem 0.48rem;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  color: $duo-blue;
+}
+.main-nav-lg-link:hover,
+.main-nav-lg-link:focus {
+  color: #6bbf4e;
+}
+
+.main-nav-icon {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  font-size: 0.8125rem;
+  position: relative;
+  top: 2px;
+  right: 4px;
+}
+
+
 /*--- end base styles ---*/
