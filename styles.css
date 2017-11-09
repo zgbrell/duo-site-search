@@ -238,12 +238,20 @@ hr.main-sub-nav-sep {
   outline: 0;
 }
 
+#search-wrap label {
+  color: #9B9B9B;
+}
+
 #search-wrap label,
 #search-wrap input[type=text] {
   padding: 1.0rem;
   font-size: 4.5rem;
-  color: #9B9B9B;
 }
+
+.#search-wrap input[type=text] {
+  color: #4A4A4A;
+}
+
 
 .icon-svg {
   height: 60px;
