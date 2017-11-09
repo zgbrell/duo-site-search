@@ -229,7 +229,8 @@ img {
   display:block;
   padding:1.0rem;
   width:100%;
-  font-size:1.0rem
+  font-size:1.0rem;
+  outline: 0
   }@media screen and (min-width: 68.75em){
     #search-form input[type=text]{
       margin-bottom:0
