@@ -84,7 +84,7 @@
       function renderHits(content) {
         $('#results').html(function() {
           return $.map(content.hits, function(hit) {
-            return '<h3 class="title">' + hit._highlightResult.title.value + '</h3>';
+            return '<h3 class="title">' + hit._highlightResult.title.value + '</h3><p>' + hit._highlightResult.seo_description.value + '</p>';
           });
         });
       }
