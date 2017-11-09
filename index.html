@@ -56,15 +56,15 @@
     <script>
       var client = algoliasearch('Z4OW806SU2', '8077ed1704cb5ae155e74e4e0e29b24e');
       var index = client.initIndex('demo_duocom');
-      var helper = algoliasearchHelper(client, 'demo_duocom');
+      //var helper = algoliasearchHelper(client, 'demo_duocom');
 
       $('#site-search').autocomplete({ hint: false }, [
         {
           source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 5 }),
-          displayKey: 'my_attribute',
+          displayKey: 'title',
           templates: {
             suggestion: function(suggestion) {
-              return suggestion._highlightResult.my_attribute.value;
+              return suggestion._highlightResult.title.value;
             }
           }
         }
