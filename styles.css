@@ -144,5 +144,11 @@ img {
   right: 4px;
 }
 
+#search-form{position:relative}
+#search-form{float:left;display:block;margin-right:2.35765%;width:65.88078%;margin-left:17.05961%}
+#search-form input[type=text]{display:block;padding:1.0rem;width:100%;font-size:1.0rem}@media screen and (min-width: 68.75em){#search-form input[type=text]{margin-bottom:0}
+#search-form input[type=text]{border:1px solid #ccc}}
+#search-form input[type=text],#search-form button{border:none;background-color:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;border-radius:4px}
+#search-form button{position:absolute;top:0.625rem;right:0.625rem;padding:0}
 
 /*--- end base styles ---*/
