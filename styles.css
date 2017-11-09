@@ -255,6 +255,7 @@ hr.main-sub-nav-sep {
 #search-wrap .aa-dropdown-menu {
   padding: 1.0rem;
   width: 100%;
+  background: #ffffff;
   text-align: left;
   border: 1px solid #ccc;
 }
@@ -266,12 +267,14 @@ hr.main-sub-nav-sep {
 }
 
 .search-results {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin-top: 4.0rem;
 }
 
 .title {
   margin-bottom: 1.0rem;
+}
+
+.title,
+.title a {
   color: #6bbf4e;
 }
