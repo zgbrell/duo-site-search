@@ -66,6 +66,7 @@
       ]).on('autocomplete:selected', function(event, suggestion, dataset) {
         console.log(suggestion, dataset);
       });
+
       helper.on('result', function(result) {
         result.hits.forEach((hit) =>
         	 $('#results').append('<p>' + hit.name + '</p>');
