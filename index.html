@@ -47,10 +47,12 @@
 		</main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@2.23.0/dist/algoliasearch.helper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
     <script>
       var client = algoliasearch('Z4OW806SU2', '8077ed1704cb5ae155e74e4e0e29b24e');
       var index = client.initIndex('demo_duocom');
+      var helper = algoliasearchHelper(client, 'demo_duocom');
       $('#site-search').autocomplete({ hint: false }, [
         {
           source: $.fn.autocomplete.sources.hits(index, { hitsPerPage: 5 }),
@@ -63,6 +65,11 @@
         }
       ]).on('autocomplete:selected', function(event, suggestion, dataset) {
         console.log(suggestion, dataset);
+      });
+      helper.on('result', function(result) {
+        result.hits.forEach((hit) =>
+        	 $('#results').append('<p>' + hit.name + '</p>');
+        );
       });
     </script>
 	</body>
